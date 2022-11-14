@@ -1,0 +1,134 @@
+<idea-plugin>
+    <id>org.example.PSI1411</id>
+    <name>Plugin display name here</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="org.vanvu.psi.controller.application.PsiApplicationSettings"/>
+
+<!--        <toolWindow id="Psi"-->
+<!--                    anchor="bottom"-->
+<!--                    canCloseContents="false"-->
+<!--                    factoryClass="org.vanvu.psi.window.MyToolWindowFactory"-->
+<!--                    icon="AllIcons.Actions.Checked"/>-->
+        <toolWindow id="PsiViewer"
+                    icon="AllIcons.General.Error"
+                    anchor="right"
+                    factoryClass="org.vanvu.psi.controller.project.PsiToolWindowFactory"/>
+        <projectService serviceImplementation="org.vanvu.psi.controller.project.PsiProjectService"/>
+    </extensions>
+
+    <actions>
+        <group id="PsiPluginTreeActions" text="Filter" popup="true">
+<!--            <action id="PsiScrollToSourceAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Autoscroll to Source"-->
+<!--                    description="Auto-scroll to the source location of errors and warnings"-->
+<!--                    icon="AllIcons.General.AutoscrollToSource"/>-->
+
+<!--            <action id="PsiExpandAllAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Expand All"-->
+<!--                    description="Expand all elements in the tool window"-->
+<!--                    icon="AllIcons.Actions.Expandall"/>-->
+
+<!--            <action id="PsiCollapseAllAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Collapse All"-->
+<!--                    description="Collapse all elements in the tool window"-->
+<!--                    icon="AllIcons.General.CollapseComponent"/>-->
+
+<!--            <separator/>-->
+
+<!--            <action id="PsiDisplayErrorsAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Display Errors"-->
+<!--                    description="Display error results"-->
+<!--                    icon="AllIcons.General.Error"/>-->
+
+<!--            <action id="PsiDisplayWarningsAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Display Warnings"-->
+<!--                    description="Display warning results"-->
+<!--                    icon="AllIcons.General.Warning"/>-->
+
+<!--            <action id="PsiDisplayInfoAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Display Information Results"-->
+<!--                    description="Display information results"-->
+<!--                    icon="AllIcons.General.Information"/>-->
+<!--        </group>-->
+
+<!--        <group id="PsiPluginActions" text="Psi" popup="true">-->
+<!--            <action id="PsiCloseAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Close Psi Window"-->
+<!--                    description="Close the Psi tool window"-->
+<!--                    icon="AllIcons.Actions.Cancel"/>-->
+
+<!--            <action id="PsiStopCheck"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Stop the Running Scan"-->
+<!--                    description="Stop the scan currently being run"-->
+<!--                    icon="AllIcons.Actions.Suspend">-->
+<!--            </action>-->
+
+<!--            <separator/>-->
+
+<!--            <action id="PsiCurrentFileAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Check Current File"-->
+<!--                    description="Run Checkstyle on the current file in the editor"-->
+<!--                    icon="AllIcons.Actions.Execute">-->
+
+<!--                <add-to-group group-id="EditorPopupMenu" anchor="last"/>-->
+<!--            </action>-->
+
+<!--            <action id="PsiModuleFilesAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Check Module"-->
+<!--                    description="Run Checkstyle on all files in the current module"-->
+<!--                    icon="AllIcons.Nodes.IdeaModule">-->
+<!--            </action>-->
+
+<!--            <action id="PsiProjectFilesAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Check Project"-->
+<!--                    description="Run Checkstyle on all files in the current project"-->
+<!--                    icon="AllIcons.Nodes.IdeaProject">-->
+<!--            </action>-->
+
+<!--            <action id="PsiModifiedFilesAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Check All Modified Files"-->
+<!--                    description="Run Checkstyle on all modified files"-->
+<!--                    icon="AllIcons.Actions.ListChanges">-->
+<!--            </action>-->
+
+<!--            <action id="PsiDefaultChangeListAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Check Files in the Current Change List"-->
+<!--                    description="Run Checkstyle on the current change list"-->
+<!--                    icon="AllIcons.Vcs.Patch">-->
+<!--            </action>-->
+
+<!--            <separator/>-->
+
+<!--            <action id="PsiClearCheckCacheAction"-->
+<!--                    class="org.vanvu.psi.actions.PopupDialogAction"-->
+<!--                    text="Reload Rules Files"-->
+<!--                    description="Clear the rules file cache and blocked configurations, forcing a reload of changed rules"-->
+<!--                    icon="AllIcons.Actions.Refresh">-->
+<!--            </action>-->
+        </group>
+    </actions>
+</idea-plugin>

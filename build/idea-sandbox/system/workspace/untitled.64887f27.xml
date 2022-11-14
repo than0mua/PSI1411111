@@ -1,0 +1,73 @@
+<project version="4">
+  <component name="ExternalSystemProjectTracker">
+    <option name="projectSettingsTrackerStates">
+      <map>
+        <entry>
+          <key>
+            <Id>
+              <option name="externalProjectPath" value="$PROJECT_DIR$/../intellij-sdk-code-samples-main/project_view_pane" />
+              <option name="systemId" value="GRADLE" />
+            </Id>
+          </key>
+          <value>
+            <Project>
+              <option name="settingsTracker">
+                <State>
+                  <option name="dirty" value="false" />
+                  <option name="settingsFiles">
+                    <map>
+                      <entry key="$PROJECT_DIR$/../intellij-sdk-code-samples-main/project_view_pane/build.gradle" value="1699847191" />
+                      <entry key="$PROJECT_DIR$/../intellij-sdk-code-samples-main/project_view_pane/gradle/wrapper/gradle-wrapper.properties" value="1828583594" />
+                      <entry key="$PROJECT_DIR$/../intellij-sdk-code-samples-main/project_view_pane/settings.gradle" value="2380331454" />
+                    </map>
+                  </option>
+                </State>
+              </option>
+            </Project>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <Id>
+              <option name="externalProjectPath" value="$PROJECT_DIR$" />
+              <option name="systemId" value="GRADLE" />
+            </Id>
+          </key>
+          <value>
+            <Project>
+              <option name="settingsTracker">
+                <State>
+                  <option name="dirty" value="false" />
+                  <option name="settingsFiles">
+                    <map>
+                      <entry key="$PROJECT_DIR$/build.gradle" value="1284390924" />
+                      <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1847016884" />
+                      <entry key="$PROJECT_DIR$/settings.gradle" value="3790698267" />
+                    </map>
+                  </option>
+                </State>
+              </option>
+            </Project>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../intellij-sdk-code-samples-main/project_view_pane" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="PermissionStore">
+    <excludedFiles>
+      <Path>$PROJECT_DIR$/.idea</Path>
+    </excludedFiles>
+    <fileAccess>Readonly</fileAccess>
+    <terminalAccess>Readonly</terminalAccess>
+    <runAccess>Readonly</runAccess>
+    <toolWindowAccess>Disabled</toolWindowAccess>
+  </component>
+</project>
